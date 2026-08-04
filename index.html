@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enroll MFA Method</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Page layout additions */
+        .enroll-container {
+            max-width: 900px;
+            margin: 40px auto;
+        }
+
+        .section {
+            background: #1a1a1a;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+
+        .section h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .item {
+            background: #0f0f0f;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .item p {
+            margin: 5px 0;
+        }
+
+        .setup-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #4a90e2;
+            color: #fff;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        .top-buttons {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+
+        .top-buttons a {
+            margin-left: 10px;
+            color: #4a90e2;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="enroll-container">
+
+    <!-- Top Buttons -->
+    <div class="top-buttons">
+        <a href="dashboard.html">Overview</a>
+        <a href="enroll.html">Enroll</a>
+    </div>
+
+    <!-- Header -->
+    <div class="section">
+        <h2>Enroll a Method</h2>
+        <p>Choose how you want to verify your identity.</p>
+        <p>Multi-factor authentication adds a second layer of protection, preventing unauthorized access even if someone obtains your password.</p>
+        <p><strong>Account:</strong> israel@live.com</p>
+    </div>
+
+    <!-- Authenticator App -->
+    <div class="section">
+        <h3>Authenticator App (TOTP)</h3>
+        <div class="item">
+            <p><strong>Status:</strong> Active • Enrolled</p>
+            <p>Works offline. Codes rotate every 30 seconds.</p>
+            <p>Compatible with Google Authenticator, Authy, 1Password, and any TOTP-standard app.</p>
+            <p><strong>Security Strength:</strong> Strong</p>
+        </div>
+    </div>
+
+    <!-- SMS Verification -->
+    <div class="section">
+        <h3>SMS Text Message (SMS)</h3>
+        <div class="item">
+            <p>A 6-digit code is sent to your registered phone number each time you sign in.</p>
+            <p>Requires cellular service.</p>
+            <p><strong>Security Strength:</strong> Medium</p>
+            <a class="setup-btn" href="#">Set up</a>
+        </div>
+    </div>
+
+    <!-- Phone Call -->
+    <div class="section">
+        <h3>Phone Call (Voice)</h3>
+        <div class="item">
+            <p>An automated voice call delivers a one-time code.</p>
+            <p>Useful as a fallback when SMS is unavailable.</p>
+            <p><strong>Security Strength:</strong> Basic</p>
+            <a class="setup-btn" href="#">Set up</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
